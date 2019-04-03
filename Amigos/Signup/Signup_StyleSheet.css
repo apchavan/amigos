@@ -1,0 +1,195 @@
+﻿body {
+    background: -webkit-linear-gradient(left, #17202A, #5D6D7E);
+}
+
+/* Handles the alignment for typewriter animation */
+.wrapper-right {
+    text-align: center;
+    float: right;
+    /*margin-right: 3%;
+    margin-top: 1%;*/
+    margin: 50px 2px auto auto;
+}
+
+/* Styling for signup window controls */
+.signup-form .form-control {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border: 1px solid #d4d4d4;
+    border-radius: 1rem;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+}
+
+/* Styling for Gender RadioButton */
+.signup-form .gender-control {
+    font-size: large;
+    margin-left: 25px;
+    padding-right: 50px;
+}
+
+.main-div {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 1rem;
+    /*margin: 10px auto 30px;*/
+    max-width: 38%;
+    padding: 50px 70px 10px 70px;
+    /*padding: 30px 50px 30px 50px;*/
+    /*margin: 5% 10% auto 10%;*/ /* Align login form alignment on webpage */
+    margin-left: 2%;
+    margin-top: 2%;
+    float: left;
+    vertical-align: central;
+}
+
+.panel {
+    text-align: center;
+}
+
+.signup-form .form-group {
+    margin-bottom: 10px;
+}
+
+.signup-form {
+    text-align: center;
+}
+
+.forgot a {
+    color: #777777;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.signup-form .btn.btn-primary {
+    background: #f0ad4e none repeat scroll 0 0;
+    border-color: #f0ad4e;
+    color: #ffffff;
+    font-size: 14px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+}
+
+.forgot {
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-text {
+    color: white;
+    font-size: 100%;
+    margin-right: 225px;
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+}
+
+.signup-form .btn.btn-primary.reset {
+    background: #ff9900 none repeat scroll 0 0;
+}
+
+/* Force to add place-holder to date type textbox of ASP control */
+input[type="date"]:before {
+    /*color: lightgrey;*/
+    content: attr(placeholder) !important;
+    margin-right: 0.5em;
+}
+
+input[type="date"]:focus:before {
+    content: '' !important;
+}
+
+/* Signup button design code */
+.signupBtn {
+    background-color: #0070c9;
+    color: white;
+    font-weight: 500;
+    border: 2px solid #008CBA;
+    padding: 1px 10px 1px 10px;
+    border-radius: 4px;
+    text-align: center;
+    width: 80px;
+    height: 50px;
+    white-space: nowrap;
+    background: linear-gradient(#42a1ec, #0070c9);
+    border-color: #07c;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+    .signupBtn:hover {
+        background-color: #147bcd;
+        background: -webkit-linear-gradient(#51a9ee, #147bcd);
+        background: linear-gradient(#51a9ee, #147bcd);
+        border-color: #1482d0;
+        text-decoration: none;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+    }
+
+    .signupBtn:active {
+        background-color: #0067b9;
+        background: -webkit-linear-gradient(#3d94d9, #0067b9);
+        background: linear-gradient(#3d94d9, #0067b9);
+        border-color: #006dbc;
+        outline: none;
+    }
+
+    .signupBtn:focus {
+        box-shadow: 0 0 0 3px rgba(131,192,253,0.5);
+        outline: none;
+    }
+
+
+/* Typewriter animation style code */
+#typewriterAmigos {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+    #typewriterAmigos:hover {
+        color: #FFFFFF;
+        text-decoration: none;
+        cursor: default;
+    }
+
+.typewriterAmigos-align {
+    text-align: center;
+    padding-top: 10em;
+    float: right;
+    margin-top: 3%;
+    margin-right: 18%;
+}
+
+.anchor-typewriterAmigos {
+    font-family: 'Harlow Solid';
+    font-size: xx-large;
+    font-weight: normal;
+    color: #FFFFFF;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* Modal popup style */
+.modalBackground {
+    background-color: Black;
+    filter: alpha(opacity=90);
+    opacity: 0.8;
+}
+
+.modalPopup {
+    background-color: #FFFFFF;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 300px;
+    height: 140px;
+}

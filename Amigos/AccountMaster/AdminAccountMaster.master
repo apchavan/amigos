@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminAccountMaster.master.cs" Inherits="AccountMaster_AdminAccountMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="../Images/amigos_tab_icon.ico" />
+    <!-- Before all other stylesheets to load Bootstrap CSS & other libraries. -->
+    <!--  NOTE: USE THE LATEST VERSION MENTIONED ON THE OFFICIAL SITES OF RESPECTIVE LIBRARIES BELOW. -->
+    <link rel="stylesheet" href="~/Styles_and_scripts/bootstrap.min.css" />
+    
+    <script src="../Styles_and_scripts/bootstrap.bundle.min.js"></script>
+    <script src="../Styles_and_scripts/jquery-3.3.1.min.js"></script>
+    <script src="../Styles_and_scripts/Sidebar_Navigation_JavaScript.js"></script>
+
+    <!-- Load stylesheet for Home below. -->
+    <link rel="stylesheet" href="../Styles_and_scripts/Font_awesome/css/all.min.css" />
+    <link rel="stylesheet" href="../Styles_and_scripts/Sidebar_Navigation_StyleSheet.css" />
+    <link rel="stylesheet" href="AdminAccountMaster_StyleSheet.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <!-- Header content of page as contained on other aspx pages to have title and icon. -->
+    </asp:ContentPlaceHolder>
+    <title></title>
+</head>
+
+<body>
+    <form id="adminAccountMaster_form" runat="server">
+
+        <nav class="navbar-primary" style="position: fixed;">
+
+            <asp:Image ID="amigosLogo" oncontextmenu="return false;" ToolTip="Welcome to Amigos! 💕💞💖" ImageAlign="Top" ImageUrl="~/Images/amigos.png" runat="server" />
+            <label id="amigosName" oncontextmenu="return false;" class="nav-label">Amigos</label>
+
+            <br />
+
+            <div class="wrap-SearchTextBox">
+                <div class="search">
+                    <input id="searchText" type="text" class="nav-searchTextBox search searchTerm" placeholder="🔍 Find Amigos !" runat="server" />
+                    <button id="searchBtn" type="submit" onserverclick="searchBtn_ServerClick" class="nav-searchButton searchButton" title="🔍 Find Amigos!" runat="server">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <br />
+            <br />
+
+            <a href="#" oncontextmenu="return false;" class="btn-expand-collapse" title="Toggle sidebar"><span class="fa fa-bars"></span></a>
+
+            <asp:Image ID="profilePicture_Image" CssClass="nav-label userProfile-Picture userProfilePicture-expand-collapse" oncontextmenu="return false;" ToolTip="Your photo 😎📷" runat="server" />
+            <asp:LinkButton ID="profile_LinkBtn" OnClick="profile_LinkBtn_Click" CssClass="nav-label profileName profileName-expand-collapse" oncontextmenu="return false;" ToolTip="Click to edit your Profile 🖼️" runat="server" />
+
+            <ul class="navbar-primary-menu sidebar_font" oncontextmenu="return false;">
+                <li>
+                    <asp:LinkButton ID="home_LinkBtn" OnClick="home_LinkBtn_Click" ToolTip="Home 🏠" runat="server"><i class="fa fa-home icon-margin-right" aria-hidden="true"></i><span class="nav-label"/>Home</asp:LinkButton>
+                    <asp:LinkButton ID="shareSomething_LinkBtn" OnClick="shareSomething_LinkBtn_Click" ToolTip="Share something 🤗" runat="server"><i class="fa fa-share-alt icon-margin-right" aria-hidden="true"></i><span class="nav-label"/>Share something</asp:LinkButton>
+                    <asp:LinkButton ID="letsChat_LinkBtn" OnClick="letsChat_LinkBtn_Click" ToolTip="Let's chat! 💬" runat="server"><i class="fa fa-comment icon-margin-right" aria-hidden="true"></i><span class="nav-label"/>Let's Chat !</asp:LinkButton>
+                    <asp:LinkButton ID="friends_LinkBtn" OnClick="friends_LinkBtn_Click" ToolTip="Friends 😎🎉" runat="server"><i class="fa fa-users icon-margin-right" aria-hidden="true"></i><span class="nav-label"/>Friends</asp:LinkButton>
+                    <asp:LinkButton ID="friendRequests_LinkBtn" OnClick="friendRequests_LinkBtn_Click" ToolTip="Friend requests 🎉😍😎🎉" runat="server"><i class="fa fa-plus-square icon-margin-right" aria-hidden="true"></i><span class="nav-label"/>Friend requests</asp:LinkButton>
+                    <asp:LinkButton ID="trendingPosts_LinkBtn" OnClick="trendingPosts_LinkBtn_Click" ToolTip="Show trending posts 🔥📈⚡😘" runat="server"><i class="fa fa-bolt icon-margin-right" aria-hidden="true"></i><span class="nav-label"/>Trending posts</asp:LinkButton>
+                    <asp:LinkButton ID="reportedPosts_LinkBtn" OnClick="reportedPosts_LinkBtn_Click" ToolTip="Show reported posts ❌📉❓🔽" runat="server"><i class="fa fa-flag icon-margin-right" aria-hidden="true"></i><span class="nav-label"/>Reported posts</asp:LinkButton>
+                    <asp:LinkButton ID="blockedUsers_LinkBtn" OnClick="blockedUsers_LinkBtn_Click" ToolTip="Show blocked users 🚫❌" runat="server"><i class="fa fa-ban icon-margin-right" aria-hidden="true"></i><span class="nav-label"/>Blocked users</asp:LinkButton>
+                    <asp:LinkButton ID="logout_LinkBtn" OnClick="logout_LinkBtn_Click" ToolTip="Logout 🔐" runat="server"><i class="fas fa-sign-out-alt icon-margin-right" aria-hidden="true"></i><span class="nav-label"/>Logout</asp:LinkButton>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <asp:ContentPlaceHolder ID="accountMaster_Content" runat="server">
+                <!-- Body content of remaining page as contained on other aspx pages. -->
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <!-- Script that handles toggling of sidebar -->
+    <script>
+        $('.btn-expand-collapse').click(function (e) {
+            $('.navbar-primary').toggleClass('collapsed');
+        });
+    </script>
+
+</body>
+</html>

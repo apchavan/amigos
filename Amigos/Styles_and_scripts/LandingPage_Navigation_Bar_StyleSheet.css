@@ -1,0 +1,62 @@
+﻿body {
+}
+
+#amigos-landingpage-name {
+    font-family: 'Harlow Solid';
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 25px;
+    float: left; /* Could remove this 'float' property :)  */
+    color: white;
+}
+    /* Rotate the 'Amigo' text on hover */
+    #amigos-landingpage-name:hover {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+        transform-style: preserve-3d;
+        transition-duration: 1.0s;
+    }
+
+/* Hover effect duration for navigation bar items */
+.transition-nav-item {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.signupBtn {
+    background-color: #0070c9;
+    color: white;
+    font-weight: 400;
+    border: 2px solid #008CBA;
+    padding: 1px 10px 1px 10px;
+    border-radius: 4px;
+    text-align: center;
+    white-space: nowrap;
+    background: linear-gradient(#42a1ec, #0070c9);
+    border-color: #07c;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    cursor: pointer;
+}
+
+    .signupBtn:active {
+        background-color: #0067b9;
+        background: -webkit-linear-gradient(#3d94d9, #0067b9);
+        background: linear-gradient(#3d94d9, #0067b9);
+        border-color: #006dbc;
+        outline: none;
+    }
+
+    .signupBtn:hover {
+        background-color: #147bcd;
+        background: -webkit-linear-gradient(#51a9ee, #147bcd);
+        background: linear-gradient(#51a9ee, #147bcd);
+        border-color: #1482d0;
+        text-decoration: none;
+    }
+
+    .signupBtn:focus {
+        box-shadow: 0 0 0 3px rgba(131,192,253,0.5);
+        outline: none;
+    }

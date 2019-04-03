@@ -1,0 +1,11 @@
+﻿body {
+}
+
+.acceptRequestBtn{
+    float: right;
+    margin-right: 10px;
+}
+
+.rejectRequestBtn{
+    float: right;
+}

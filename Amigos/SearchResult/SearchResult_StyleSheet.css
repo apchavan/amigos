@@ -1,0 +1,43 @@
+﻿
+body {
+    /*background-color: #eeeeee;*/
+}
+
+.h7 {
+    font-size: 0.8rem;
+}
+
+.gedf-wrapper {
+    margin-top: 0.97rem;
+}
+
+@media (min-width: 992px) {
+    .gedf-main {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .gedf-card {
+        margin-bottom: 2.77rem;
+    }
+}
+
+
+/* 'Other username' link-button design code */
+.otherUserNameLinkBtn {
+    text-decoration: none;
+    text-align: center;
+    width: auto;
+    height: auto;
+    white-space: nowrap;
+    border-style: none;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition-duration: 0.6s; /* Safari */
+    transition-duration: 0.6s;
+}
+
+    .otherUserNameLinkBtn:hover {
+        text-decoration: none;
+        color: #000000;
+    }

@@ -1,0 +1,48 @@
+﻿
+body {
+}
+
+/* 'Update profile' button design code */
+.updateProfileBtn {
+    float: right;
+    background-color: #0070c9;
+    color: white;
+    font-weight: 500;
+    border: 2px solid #008CBA;
+    padding: 1px 10px 1px 10px;
+    border-radius: 4px;
+    text-align: center;
+    width: auto;
+    height: 36px;
+    white-space: nowrap;
+    background: linear-gradient(#42a1ec, #0070c9);
+    border-color: #07c;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+    .updateProfileBtn:hover {
+        background-color: #147bcd;
+        background: -webkit-linear-gradient(#51a9ee, #147bcd);
+        background: linear-gradient(#51a9ee, #147bcd);
+        border-color: #1482d0;
+        text-decoration: none;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+    }
+
+    .updateProfileBtn:active {
+        background-color: #0067b9;
+        background: -webkit-linear-gradient(#3d94d9, #0067b9);
+        background: linear-gradient(#3d94d9, #0067b9);
+        border-color: #006dbc;
+        outline: none;
+    }
+
+    .updateProfileBtn:focus {
+        box-shadow: 0 0 0 3px rgba(131,192,253,0.5);
+        outline: none;
+    }

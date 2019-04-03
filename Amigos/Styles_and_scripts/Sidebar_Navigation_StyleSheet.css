@@ -1,0 +1,233 @@
+﻿
+/* Amigos logo, name styling */
+#amigosLogo {
+    margin-left: 8px;
+    margin-top: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+#amigosName {
+    margin-left: 20px;
+    font-family: 'Harlow Solid';
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+    /* Rotate the 'Amigo' text on hover */
+    #amigosName:hover {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+        transform-style: preserve-3d;
+        transition-duration: 1.0s;
+    }
+
+/* Styling for search Amigos textbox */
+#search_TextBox {
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    display: block;
+    left: 5%;
+    top: 8%;
+    text-align: center;
+    outline: none;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+}
+
+.searchTerm {
+    float: left;
+    width: 100%;
+    border: 3px solid #0070c9;
+    padding: 5px;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+    .searchTerm:focus {
+        color: #0070c9;
+    }
+
+.searchButton {
+    position: absolute;
+    /*right: -50px;*/
+    width: 40px;
+    height: 35px;
+    border: 1px solid #008CBA;
+    border-color: #07c;
+    background-color: #0070c9;
+    background: linear-gradient(#42a1ec, #0070c9);
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+    .searchButton:hover {
+        background-color: #147bcd;
+        background: -webkit-linear-gradient(#51a9ee, #147bcd);
+        background: linear-gradient(#51a9ee, #147bcd);
+        border-color: #1482d0;
+        text-decoration: none;
+        outline: none;
+    }
+
+/*Resize the wrap to see the search bar change!*/
+.wrap-SearchTextBox {
+    width: 78%;
+    position: absolute;
+    top: 8%;
+    left: 2px;
+    /*transform: translate(-50%, -50%);*/
+}
+
+/* Space the icons in sidebar and text on right side */
+.icon-margin-right {
+    margin-right: 8px;
+}
+
+
+/* Scale user profile picture */
+.userProfile-Picture {
+    align-self: center;
+    width: 72px; /*40px*/
+    height: 72px; /*40px*/
+    border-radius: 50%;
+    border-style: outset; /* Border of profile picture */
+    border-color: #FFFFFF;
+}
+
+.userProfilePicture-expand-collapse {
+    position: absolute;
+    display: block;
+    left: 30%;
+    bottom: 7%;
+    margin-bottom: 30%;
+    width: 40%;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Style username */
+.profileName {
+    font-family: 'Comic Sans MS';
+    font-style: oblique;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+    .profileName:hover {
+        text-decoration: none;
+        color: #FFFFFF;
+        border: none;
+    }
+
+.profileName-expand-collapse {
+    position: absolute;
+    display: block;
+    left: 0px;
+    bottom: 0;
+    margin-bottom: 30%;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.navbar-primary {
+    background-color: #333;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    top: 0%;
+    width: 200px;
+    z-index: 8;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+    .navbar-primary.collapsed {
+        width: 60px;
+    }
+
+        .navbar-primary.collapsed .nav-label {
+            display: none;
+        }
+
+        /* For search textbox to hide when collapse*/
+        .navbar-primary.collapsed .nav-searchTextBox {
+            display: none;
+        }
+
+        .navbar-primary.collapsed .nav-searchButton {
+            margin-left: 5px;
+        }
+
+
+.btn-expand-collapse {
+    position: absolute;
+    display: block;
+    left: 0px;
+    bottom: 0;
+    width: 100%;
+    padding: 8px 0;
+    border-top: solid 1px #666;
+    color: grey;
+    font-size: 20px;
+    text-align: center;
+}
+
+    .btn-expand-collapse:hover,
+    .btn-expand-collapse:focus {
+        background-color: #222;
+        color: white;
+    }
+
+    .btn-expand-collapse:active {
+        background-color: #111;
+    }
+
+.navbar-primary-menu,
+.navbar-primary-menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .navbar-primary-menu li a {
+        display: block;
+        padding: 10px 18px;
+        text-align: left;
+        border-bottom: solid 1px #444;
+        color: #ccc;
+    }
+
+        .navbar-primary-menu li a:hover {
+            background-color: #000;
+            text-decoration: none;
+            color: white;
+        }
+
+/* Important classes below that manages the content when sidebar is toggled */
+.main-content {
+    margin-top: 60px;
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.collapsed + .main-content {
+    margin-left: 60px;
+}
