@@ -3,7 +3,7 @@
 </p>
 
 # *Amigos*
-‘Amigos’ is a social networking platform developed using **.NET framework 4.6**.
+‘Amigos’ is a social networking platform developed using **.NET framework 4.6**. ***{College project}***
 
 You can check how pages look for this site in directory *'Output pages'*.
 
