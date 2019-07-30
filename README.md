@@ -14,8 +14,6 @@ You can check how pages look for this site in directory *'Output pages'*.
 - [x] Processor - Intel i3 (6th gen.), AMD A10 (6th gen.) or newer
 - [x] Microsoft Visual Studio 2015 update 3 or above
 - [x] .NET framework - 4.6 or above
-
-- ### *Specifications for coding:*
 - [x] Front End - ASP.NET
 - [x] Back End - SQL Server 2014 (Default in VS-2015 update 3)
 - [x] Code behind - C#
